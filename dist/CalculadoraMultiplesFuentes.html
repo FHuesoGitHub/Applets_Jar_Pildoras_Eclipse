@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora</title>
+</head>
+
+<style>
+#miapplet{
+margin:auto;
+position:relative;
+width:350px;
+}
+h1{
+text-align:center;
+}
+</style>
+
+<body bgcolor="blue">
+<h1>Calculadora Applet</h1>	
+<div id="miapplet">
+	<!--Con la etiqueta applet y el parámetro code, indico el applet de java que quiero ejecutar desde la web. Debo pasar el archivo .class con la clase principal cuya ruta relativa toma como directorio raiz el nivel 0 dentro del .jar, y en el parámetro archive debo pasar el archivo .jar donde está empaquetada la aplicación con la ruta relativa tomando como directorio raiz el mismo donde está el arcivo .html. Con width y height le paso en pixel el tamaño que ocupará el applet dentro de la web.-->
+	<applet code="jar/CalculadoraMultiplesFuentes.class" archive="calculadora.jar" width="350" height="500"></applet>
+</div>	
+	
+</body>
+</html>
